@@ -53,8 +53,12 @@
   ._80 {
     flex: 8; }
   ._85 {
-    flex: 8.5; } }
+    flex: 8.5; }
+  .h-100 {
+    height: 100%; } }
 
+/* utils */
+/* ------------------------------------ */
 .bg-orange {
   background-color: orange; }
 
@@ -63,3 +67,70 @@
 
 .bg-gray {
   background-color: gray; }
+
+.h-100 {
+  height: 100% !important; }
+
+.header {
+  font-family: "Overpass", sans-serif;
+  background-color: #ff525d;
+  color: white;
+  min-height: 500px;
+  border-radius: 0 0 0 5rem;
+  background-image: url("./images/bg-pattern-intro-desktop.svg");
+  background-size: 300%;
+  background-position: center; }
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100px;
+    font-size: 1rem; }
+    .header__nav li,
+    .header__nav span,
+    .header__nav h1 {
+      cursor: pointer; }
+    .header__nav__brand h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center; }
+    .header__nav__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      list-style: none; }
+      .header__nav__list li:nth-child(n) {
+        margin-right: 1.5rem;
+        font-weight: bold; }
+        .header__nav__list li:nth-child(n):after {
+          content: "\f078";
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          font-size: 0.5rem;
+          margin-left: 0.5rem; }
+    .header__nav__auth {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1rem; }
+      .header__nav__auth span:nth-child(n) {
+        margin-right: 1.5rem; }
+
+/* button */
+.btn {
+  border-radius: 1.5rem;
+  padding: .5rem 1rem;
+  cursor: pointer; }
+  .btn--primary {
+    background-color: white;
+    color: #ff8f70;
+    transition: all 0.3s ease-in-out; }
+    .btn--primary:hover {
+      background-color: #c8c8cb;
+      color: white; }

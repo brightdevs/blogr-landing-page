@@ -9,6 +9,57 @@
     margin: 0;
     font-size: 1rem; }
 
-.content {
-  background-color: orange;
-  padding: .5rem; }
+* {
+  margin: 0;
+  padding: 0; }
+
+/* grid */
+.container {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.column {
+  flex-basis: 100%; }
+
+.column_base_padding {
+  padding: 10px; }
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1; }
+  ._15 {
+    flex: 1.5; }
+  ._20 {
+    flex: 2; }
+  ._25 {
+    flex: 2.5; }
+  ._30 {
+    flex: 3; }
+  ._40 {
+    flex: 4; }
+  ._55 {
+    flex: 5.5; }
+  ._60 {
+    flex: 6; }
+  ._70 {
+    flex: 7; }
+  ._75 {
+    flex: 7.5; }
+  ._80 {
+    flex: 8; }
+  ._85 {
+    flex: 8.5; } }
+
+.bg-orange {
+  background-color: orange; }
+
+.bg-blue {
+  background-color: #64f8ec; }
+
+.bg-gray {
+  background-color: gray; }

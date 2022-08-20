@@ -1,0 +1,9 @@
+:root {
+  font-size: 100%; }
+  :root body {
+    margin: 0;
+    font-size: 1rem; }
+
+.content {
+  background-color: orange;
+  padding: .5rem; }

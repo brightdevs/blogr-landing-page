@@ -75,11 +75,15 @@
   font-family: "Overpass", sans-serif;
   background-color: #ff525d;
   color: white;
-  min-height: 500px;
+  height: 500px;
   border-radius: 0 0 0 5rem;
   background-image: url("./images/bg-pattern-intro-desktop.svg");
   background-size: 300%;
-  background-position: center; }
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* intro header section */ }
   .header__nav {
     display: flex;
     flex-direction: row;
@@ -121,12 +125,28 @@
       font-size: 1rem; }
       .header__nav__auth span:nth-child(n) {
         margin-right: 1.5rem; }
+  .header__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1; }
+    .header__intro h1 {
+      font-size: 3.5rem; }
+    .header__intro p {
+      font-size: 1.5rem; }
+
+.header {
+  min-height: 400px; }
 
 /* button */
 .btn {
   border-radius: 1.5rem;
   padding: .5rem 1rem;
-  cursor: pointer; }
+  cursor: pointer;
+  border: none;
+  font-weight: bold; }
   .btn--primary {
     background-color: white;
     color: #ff8f70;
@@ -134,3 +154,16 @@
     .btn--primary:hover {
       background-color: #c8c8cb;
       color: white; }
+  .btn--clear {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out; }
+    .btn--clear:hover {
+      background-color: white;
+      color: #c8c8cb; }
+
+.btns {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5rem; }

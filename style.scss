@@ -144,11 +144,15 @@ $fw-700: 700;
     font-family: $font-family-primary;
     background-color: $primary-light-red;
     color: $primary-white;
-    min-height: 500px;
+    height: 500px;
     border-radius: 0 0 0 5rem;
     background-image: url('./images/bg-pattern-intro-desktop.svg');
     background-size: 300%;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 
     &__nav {
         @include flex(row, flex-start, center);
@@ -204,6 +208,26 @@ $fw-700: 700;
         }
     }
 
+    /* intro header section */
+    &__intro {
+        @include flex(column, center, center);
+        height: 100%;
+        flex: 1;
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+    }
+
+}
+
+.header {
+    min-height: 400px;
 }
 
 
@@ -212,6 +236,8 @@ $fw-700: 700;
     border-radius: 1.5rem;
     padding: .5rem 1rem;
     cursor: pointer;
+    border: none;
+    font-weight: bold;
 
     &--primary {
         background-color: $primary-white;
@@ -226,4 +252,23 @@ $fw-700: 700;
 
         }
     }
+
+    &--clear {
+        background-color: transparent;
+        color: $primary-white;
+        border: 1px solid $primary-white;
+        // creat a transition effect
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $primary-white;
+            color: $primary-grayish-blue;
+        }
+    }
+}
+
+.btns {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
 }

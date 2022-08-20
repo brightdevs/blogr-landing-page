@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* fonts */
+$font-family-primary: 'Overpass', sans-serif;
+$font-family-secondary: 'Ubuntu', sans-serif;
+/* Colors */
+$primary-light-red: hsl(356, 100%, 66%);
+$primary-very-light-red: hsl(355, 100%, 74%);
+$primary-very-dark-blue: hsl(208, 49%, 24%);
+$primary-white: hsl(0, 0%, 100%);
+$primary-grayish-blue: hsl(240, 2%, 79%);
+$primary-very-dark-blue: hsl(240, 10%, 16%);
+/* gradients */
+$bg-gradient-intro-mobile-light-red: hsl(13, 100%, 72%);
+$bg-gradient-intro-mobile-very-light-red: hsl(13, 100%, 72%);
+$bg-gradient-body-very-dark-gray-blue: hsl(237, 17%, 21%);
+$bg-gradient-body-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+/* weights */
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+
 :root {
     // Setting font size to about 16px.
     font-size: 100%;

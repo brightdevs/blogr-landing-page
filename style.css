@@ -75,7 +75,7 @@
   font-family: "Overpass", sans-serif;
   background-color: #ff525d;
   color: white;
-  height: 500px;
+  height: 600px;
   border-radius: 0 0 0 5rem;
   background-image: url("./images/bg-pattern-intro-desktop.svg");
   background-size: 300%;
@@ -136,6 +136,8 @@
       font-size: 3.5rem; }
     .header__intro p {
       font-size: 1.5rem; }
+    .header__intro .btns {
+      margin: 2rem 0 0 0; }
 
 .header {
   min-height: 400px; }
@@ -166,4 +168,4 @@
 .btns {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: .5rem; }
+  grid-gap: .7rem; }

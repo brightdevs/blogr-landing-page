@@ -144,7 +144,7 @@ $fw-700: 700;
     font-family: $font-family-primary;
     background-color: $primary-light-red;
     color: $primary-white;
-    height: 500px;
+    height: 600px;
     border-radius: 0 0 0 5rem;
     background-image: url('./images/bg-pattern-intro-desktop.svg');
     background-size: 300%;
@@ -210,6 +210,7 @@ $fw-700: 700;
 
     /* intro header section */
     &__intro {
+
         @include flex(column, center, center);
         height: 100%;
         flex: 1;
@@ -221,6 +222,12 @@ $fw-700: 700;
         p {
             font-size: 1.5rem;
         }
+
+        .btns {
+            margin: 2rem 0 0 0;
+        }
+
+
 
     }
 
@@ -270,5 +277,5 @@ $fw-700: 700;
 .btns {
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: .5rem;
+    grid-gap: .7rem;
 }

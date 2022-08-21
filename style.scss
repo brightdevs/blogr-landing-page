@@ -30,7 +30,9 @@ $fw-700: 700;
         margin: 0;
         // Body font size 16px
         font-size: 1rem;
+
     }
+
 }
 
 * {
@@ -114,6 +116,10 @@ $fw-700: 700;
 
 }
 
+.hide {
+    display: none !important;
+}
+
 /* utils */
 @mixin flex($direction, $justify, $align) {
     display: flex;
@@ -144,7 +150,7 @@ $fw-700: 700;
     font-family: $font-family-primary;
     background-color: $primary-light-red;
     color: $primary-white;
-    height: 600px;
+    min-height: 600px;
     border-radius: 0 0 0 5rem;
     background-image: url('./images/bg-pattern-intro-desktop.svg');
     background-size: 300%;
@@ -233,8 +239,40 @@ $fw-700: 700;
 
 }
 
-.header {
-    min-height: 400px;
+.mid-section {
+    font-family: $font-family-primary;
+    color: $primary-very-dark-blue;
+    min-height: 900px;
+    background-image: url('./images/illustration-editor-desktop.svg');
+    background-size: 800px;
+    background-position: right -20em bottom 10px;
+    background-repeat: no-repeat;
+
+
+    &__title {
+        text-align: center;
+        margin: 10rem 0 0 0;
+        font-size: 1.8rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 6.5rem 0 0 12rem;
+
+        h2 {
+            margin: 1.5rem 0;
+        }
+    }
+
+    &__img {
+        // background-image: url('./images//bg-pattern-circles.svg') no-repeat right center;
+        // background-size: 150%;
+        // height: 880px;
+        // // no repeat
+        // background-repeat: no-repeat;
+    }
 }
 
 
@@ -278,4 +316,18 @@ $fw-700: 700;
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: .7rem;
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        &__nav {
+            display: none !important;
+        }
+    }
+
+    .mid-section {
+        &__content {
+            margin: 1.5rem 1rem;
+        }
+    }
 }

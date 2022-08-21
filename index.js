@@ -41,3 +41,25 @@ window.addEventListener('resize', function () {
     updateBackgroundImage(burger, './images/icon-hamburger.svg');
   }
 });
+
+const dropdown = document.getElementsByClassName('dropdown-btn');
+
+for (let i = 0; i < dropdown.length; i++) {
+  const element = dropdown[i];
+  element.addEventListener('click', function () {
+    console.log(element);
+    // add class selected
+    element.classList.toggle('selected');
+    const dropdownContent = this.nextElementSibling;
+    dropdownContent.classList.toggle('hide');
+
+    // remove from other dropdowns
+    const dropdowns = document.getElementsByClassName('dropdown-btn');
+    for (let i = 0; i < dropdowns.length; i++) {
+      if (dropdowns[i] !== element) {
+        dropdowns[i].classList.remove('selected');
+        dropdowns[i].nextElementSibling.classList.add('hide');
+      }
+    }
+  });
+}

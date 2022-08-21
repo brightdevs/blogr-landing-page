@@ -13,13 +13,32 @@
 
 <body>
   <div id="myNav" class="overlay hide ">
-    <!-- <span class="overlay__closebtn"></span> -->
     <div class="wrapper">
       <div class="overlay__content">
         <div class="a-wrapper">
-          <a href="#">Product</a>
-          <a href="#">Company</a>
-          <a href="#">Connect</a>
+          <a id="product" class="dropdown-btn" href="#">Product</a>
+          <div class="dropdown-container hide">
+            <a href="#">Demo</a>
+            <a href="#">Reviews</a>
+            <a href="#">News</a>
+          </div>
+          <a id="company" class="dropdown-btn" href="#">Company</a>
+          <div class="dropdown-container hide">
+            <a href="#">Location</a>
+            <a href="#">About</a>
+            <a href="#">Links</a>
+          </div>
+          <a id="connect" class="dropdown-btn" href="#">Connect</a>
+          <div class="dropdown-container hide">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+        <hr>
+        <div class="auth">
+          <span class="auth-login">Login</span>
+          <span class="auth-signup btn btn--alert">Sign Up</span>
         </div>
       </div>
     </div>

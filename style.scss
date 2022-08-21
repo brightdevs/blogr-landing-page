@@ -187,18 +187,83 @@ $fw-700: 700;
             margin-bottom: 0;
             list-style: none;
 
+            li {
+                .dropdown {
+
+                    i {
+                        &:after {
+                            content: "\f078";
+                            font-family: 'Font Awesome 5 Free';
+                            font-weight: 900;
+                            font-size: 0.5rem;
+                            margin-left: 0.2rem;
+
+                        }
+                    }
+
+                    &:hover {
+
+                        i {
+                            &:after {
+                                content: "\f077";
+                                font-family: 'Font Awesome 5 Free';
+                                font-weight: 900;
+                                font-size: 0.5rem;
+                                margin-left: 0.2rem;
+                            }
+                        }
+                    }
+
+                    &-content {
+                        display: none !important;
+                        position: fixed;
+                        background-color: $primary-white;
+                        display: flex;
+                        flex-direction: column;
+                        min-width: 7rem;
+                        // padding: 0.5rem 1rem;
+                        transform: translateX(-.8rem);
+                        border-radius: .5rem;
+
+                        a {
+                            text-decoration: none;
+                            color: $primary-very-dark-blue;
+                            font-size: 1rem;
+                            padding: 0.5rem 0;
+                            margin-left: .7rem;
+                            display: block;
+                            font-weight: 500;
+
+                            &:hover {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+
+                    .dropdown {
+                        &-content {
+                            display: block !important;
+                        }
+                    }
+                }
+            }
+
+            // li:hover {
+
+            //     // show the dropdown menu
+            //     .dropdown {
+            //         display: block !important;
+            //     }
+            // }
+
             li:nth-child(n) {
                 margin-right: 1.5rem;
                 font-weight: bold;
 
-                // add chevron after each item
-                &:after {
-                    content: "\f078";
-                    font-family: 'Font Awesome 5 Free';
-                    font-weight: 900;
-                    font-size: 0.5rem;
-                    margin-left: 0.5rem;
-                }
+
             }
         }
 
@@ -313,6 +378,17 @@ $fw-700: 700;
             background-color: $primary-white;
             color: $primary-grayish-blue;
         }
+    }
+
+    &--unstyled {
+        border: none;
+        background-color: transparent;
+        color: inherit;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+
     }
 }
 

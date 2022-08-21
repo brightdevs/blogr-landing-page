@@ -267,7 +267,11 @@ $fw-700: 700;
     }
 
     &__img {
-        // background-image: url('./images//bg-pattern-circles.svg') no-repeat right center;
+        img {
+            display: none;
+        }
+
+        // background-image: url('./images/illustration-editor-desktop.svg');
         // background-size: 150%;
         // height: 880px;
         // // no repeat
@@ -323,11 +327,42 @@ $fw-700: 700;
         &__nav {
             display: none !important;
         }
+
+        &__intro {
+            padding: 0 1rem;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
     }
 
     .mid-section {
+        background-image: none;
+        margin-bottom: 2rem;
+
+        &__title {
+            font-size: 1.5rem;
+        }
+
         &__content {
+            order: 2;
             margin: 1.5rem 1rem;
+
+        }
+
+        &__img {
+            order: 1;
+            padding: 0 1rem;
+
+            img {
+                display: block;
+                width: 100%;
+            }
         }
     }
 }

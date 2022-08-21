@@ -10,8 +10,22 @@
   <link rel="stylesheet" href="style.css">
   <!-- <link rel="stylesheet" href="style.css"> -->
   <title>Frontend Mentor | [Blogr]</title>
-  </body>
+
+<body>
+  <div id="myNav" class="overlay hide ">
+    <!-- <span class="overlay__closebtn"></span> -->
+    <div class="wrapper">
+      <div class="overlay__content">
+        <div class="a-wrapper">
+          <a href="#">Product</a>
+          <a href="#">Company</a>
+          <a href="#">Connect</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <main class="container">
+    <!-- overlay -->
     <header class="row ">
       <div class="column header">
         <nav class="header__nav ">
@@ -53,10 +67,11 @@
               </div>
             </li>
           </ul>
-          <div class="header__nav__auth _20">
-            <span class="header__nav__auth-login">Login</span>
-            <span class="header__nav__auth-signup btn btn--primary">Sign Up</span>
-          </div>
+          <spa id="burger" n onclick="toggleNav()" class="header__nav__mobile-icon"></span>
+            <div class="header__nav__auth _20">
+              <span class="header__nav__auth-login">Login</span>
+              <span class="header__nav__auth-signup btn btn--primary">Sign Up</span>
+            </div>
         </nav>
         <div class="header__intro">
           <h1>A modern publishing platform</h1>
@@ -94,5 +109,7 @@
       </div>
     </section>
   </main>
+  <script src="index.js"></script>
+</body>
 
 </html>
